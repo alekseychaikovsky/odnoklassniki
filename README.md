@@ -66,7 +66,7 @@ Odnoklassniki::Client.new(access_token: 'your token', client_id: 'your client id
 ### Example
 
 ```ruby
-client = Odnoklassniki::Client.new(access_token: token)
+client = Odnoklassniki::Client.new(access_token: token, refresh_token: refresh_token)
 
 new_token = client.refresh_token! # This method will be called automatically just once
                                   # for each client before performing the request
